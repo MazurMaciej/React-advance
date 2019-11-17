@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "styled-components": "^4.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,16 +38,16 @@
     "lint-staged": "^9.4.3",
     "prettier": "^1.19.1"
   },
-    "husky": {
-      "hooks": {
-       "pre-commit": "lint-staged"
-      }
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
-    "lint-staged": {
-      "*.js": [
-        "prettier --config .prettierrc --write",
-        "eslint --fix",
-        "git add"
-      ]
-    } 
+  "lint-staged": {
+    "*.js": [
+      "prettier --config .prettierrc --write",
+      "eslint --fix",
+      "git add"
+    ]
+  }
 }
